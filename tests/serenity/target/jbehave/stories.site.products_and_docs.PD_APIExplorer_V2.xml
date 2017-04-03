@@ -1,0 +1,151 @@
+<story path="stories/site/products_and_docs/PD_APIExplorer_V2.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test API Explorer Page V2 of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/api-explorer/v2) Verification for general page&apos;s elements">
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check general page elements for API Explorer V2 Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>false</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/api-explorer/v2) Open Graph support [1.1.51 Verify tags are present in source code]">
+<examples keyword="Examples:">
+<step>Given open API Explorer V2 page</step>
+<step>Then check &lt;tag&gt; is present in the source code page</step>
+<parameters>
+<names><name>tag</name></names>
+<values><value>og:title</value></values>
+<values><value>og:url</value></values>
+<values><value>og:site_name</value></values>
+<values><value>og:image</value></values>
+<values><value>og:image:type</value></values>
+<values><value>og:image:width</value></values>
+<values><value>og:image:height</value></values>
+</parameters>
+
+<example keyword="Example:">{tag=og:title}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:title</parameter> is present in the source code page</step>
+
+<example keyword="Example:">{tag=og:url}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:url</parameter> is present in the source code page</step>
+
+<example keyword="Example:">{tag=og:site_name}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:site_name</parameter> is present in the source code page</step>
+
+<example keyword="Example:">{tag=og:image}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:image</parameter> is present in the source code page</step>
+
+<example keyword="Example:">{tag=og:image:type}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:image:type</parameter> is present in the source code page</step>
+
+<example keyword="Example:">{tag=og:image:width}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:image:width</parameter> is present in the source code page</step>
+
+<example keyword="Example:">{tag=og:image:height}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">Then check <parameter>og:image:height</parameter> is present in the source code page</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/api-explorer/v2) [5.2.2 API Explorer V2 : The parameters section is opened]">
+<examples keyword="Examples:">
+<step>Given open API Explorer V2 page</step>
+<step>When I choose &lt;apiGetMethod&gt; to send request</step>
+<step>And click GET button</step>
+<step>Then the parameters section is opened</step>
+<step>And error notification is shown on required fields</step>
+<parameters>
+<names><name>apiGetMethod</name></names>
+<values><value>Get Event Details</value></values>
+<values><value>Get Event Images</value></values>
+<values><value>Get Attraction Details</value></values>
+<values><value>Get Classification Details</value></values>
+<values><value>Get Venue Details</value></values>
+</parameters>
+
+<example keyword="Example:">{apiGetMethod=Get Event Details}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Get Event Details</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the parameters section is opened</step>
+<step outcome="successful">And error notification is shown on required fields</step>
+
+<example keyword="Example:">{apiGetMethod=Get Event Images}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Get Event Images</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the parameters section is opened</step>
+<step outcome="successful">And error notification is shown on required fields</step>
+
+<example keyword="Example:">{apiGetMethod=Get Attraction Details}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Get Attraction Details</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the parameters section is opened</step>
+<step outcome="successful">And error notification is shown on required fields</step>
+
+<example keyword="Example:">{apiGetMethod=Get Classification Details}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Get Classification Details</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the parameters section is opened</step>
+<step outcome="successful">And error notification is shown on required fields</step>
+
+<example keyword="Example:">{apiGetMethod=Get Venue Details}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Get Venue Details</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the parameters section is opened</step>
+<step outcome="successful">And error notification is shown on required fields</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/api-explorer/v2) [5.2.3 API Explorer V2 : The request list contains url and block]">
+<examples keyword="Examples:">
+<step>Given open API Explorer V2 page</step>
+<step>When I choose &lt;apiGetMethod&gt; to send request</step>
+<step>And click GET button</step>
+<step>Then the request list contains url</step>
+<step>And the request list contains response block</step>
+<parameters>
+<names><name>apiGetMethod</name></names>
+<values><value>Event Search</value></values>
+<values><value>Attraction Search</value></values>
+<values><value>Classification Search</value></values>
+<values><value>Venue Search</value></values>
+</parameters>
+
+<example keyword="Example:">{apiGetMethod=Event Search}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Event Search</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the request list contains url</step>
+<step outcome="successful">And the request list contains response block</step>
+
+<example keyword="Example:">{apiGetMethod=Attraction Search}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Attraction Search</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the request list contains url</step>
+<step outcome="successful">And the request list contains response block</step>
+
+<example keyword="Example:">{apiGetMethod=Classification Search}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Classification Search</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the request list contains url</step>
+<step outcome="successful">And the request list contains response block</step>
+
+<example keyword="Example:">{apiGetMethod=Venue Search}</example>
+<step outcome="successful">Given open API Explorer V2 page</step>
+<step outcome="successful">When I choose <parameter>Venue Search</parameter> to send request</step>
+<step outcome="successful">And click GET button</step>
+<step outcome="successful">Then the request list contains url</step>
+<step outcome="successful">And the request list contains response block</step>
+</examples>
+</scenario>
+</story>

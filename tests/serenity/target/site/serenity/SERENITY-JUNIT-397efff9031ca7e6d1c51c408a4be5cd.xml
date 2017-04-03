@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="User account" skipped="0" tests="1" time="9.74" timestamp="2017-04-93 05:49:21"><testcase name="(developer-acct.ticketmaster.com/user/1554/apps) Verification for general page's elements [2.2.3.4 Login - Password field - enter valid password]"><failure message="expected:&lt;T[here are no applications here.&#10;Create something]!&gt; but was:&lt;T[HESE ARE YOUR APPS!&#10;EXPLORE THEM]!&gt;" type="org.junit.ComparisonFailure">expected:&lt;T[here are no applications here.
+Create something]!&gt; but was:&lt;T[HESE ARE YOUR APPS!
+EXPLORE THEM]!&gt;</failure><system-err>expected:&lt;T[here are no applications here.
+Create something]!&gt; but was:&lt;T[HESE ARE YOUR APPS!
+EXPLORE THEM]!&gt;
+bla.tm.steps.pantheon.UserAccountSteps.checkIfTitleIsCorrect(UserAccountSteps.java:25)
+bla.tm.definitions.site.pantheon.UserAccountDefinition.checkGeneralPageElements(UserAccountDefinition.java:27)
+</system-err></testcase></testsuite>

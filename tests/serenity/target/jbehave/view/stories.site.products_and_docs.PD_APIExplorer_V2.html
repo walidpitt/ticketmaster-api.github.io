@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>stories.site.products_and_docs.PD_APIExplorer_V2</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/products_and_docs/PD_APIExplorer_V2.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test engineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test API Explorer Page V2 of Ticket Master Developer's site</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/api-explorer/v2) Verification for general page's elements</h2>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check general page elements for API Explorer V2 Page, where DISQUS = <span class="step parameter">true</span> and LeftMenu = <span class="step parameter">false</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/api-explorer/v2) Open Graph support [1.1.51 Verify tags are present in source code]</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open API Explorer V2 page</div>
+<div class="step">Then check &lt;tag&gt; is present in the source code page</div>
+<table>
+<thead>
+<tr>
+<th>tag</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>og:title</td></tr>
+<tr>
+<td>og:url</td></tr>
+<tr>
+<td>og:site_name</td></tr>
+<tr>
+<td>og:image</td></tr>
+<tr>
+<td>og:image:type</td></tr>
+<tr>
+<td>og:image:width</td></tr>
+<tr>
+<td>og:image:height</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {tag=og:title}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:title</span> is present in the source code page</div>
+
+<h3 class="example">Example: {tag=og:url}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:url</span> is present in the source code page</div>
+
+<h3 class="example">Example: {tag=og:site_name}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:site_name</span> is present in the source code page</div>
+
+<h3 class="example">Example: {tag=og:image}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:image</span> is present in the source code page</div>
+
+<h3 class="example">Example: {tag=og:image:type}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:image:type</span> is present in the source code page</div>
+
+<h3 class="example">Example: {tag=og:image:width}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:image:width</span> is present in the source code page</div>
+
+<h3 class="example">Example: {tag=og:image:height}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">Then check <span class="step parameter">og:image:height</span> is present in the source code page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/api-explorer/v2) [5.2.2 API Explorer V2 : The parameters section is opened]</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open API Explorer V2 page</div>
+<div class="step">When I choose &lt;apiGetMethod&gt; to send request</div>
+<div class="step">And click GET button</div>
+<div class="step">Then the parameters section is opened</div>
+<div class="step">And error notification is shown on required fields</div>
+<table>
+<thead>
+<tr>
+<th>apiGetMethod</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Get Event Details</td></tr>
+<tr>
+<td>Get Event Images</td></tr>
+<tr>
+<td>Get Attraction Details</td></tr>
+<tr>
+<td>Get Classification Details</td></tr>
+<tr>
+<td>Get Venue Details</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {apiGetMethod=Get Event Details}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Get Event Details</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the parameters section is opened</div>
+<div class="step successful">And error notification is shown on required fields</div>
+
+<h3 class="example">Example: {apiGetMethod=Get Event Images}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Get Event Images</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the parameters section is opened</div>
+<div class="step successful">And error notification is shown on required fields</div>
+
+<h3 class="example">Example: {apiGetMethod=Get Attraction Details}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Get Attraction Details</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the parameters section is opened</div>
+<div class="step successful">And error notification is shown on required fields</div>
+
+<h3 class="example">Example: {apiGetMethod=Get Classification Details}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Get Classification Details</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the parameters section is opened</div>
+<div class="step successful">And error notification is shown on required fields</div>
+
+<h3 class="example">Example: {apiGetMethod=Get Venue Details}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Get Venue Details</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the parameters section is opened</div>
+<div class="step successful">And error notification is shown on required fields</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/api-explorer/v2) [5.2.3 API Explorer V2 : The request list contains url and block]</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open API Explorer V2 page</div>
+<div class="step">When I choose &lt;apiGetMethod&gt; to send request</div>
+<div class="step">And click GET button</div>
+<div class="step">Then the request list contains url</div>
+<div class="step">And the request list contains response block</div>
+<table>
+<thead>
+<tr>
+<th>apiGetMethod</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Event Search</td></tr>
+<tr>
+<td>Attraction Search</td></tr>
+<tr>
+<td>Classification Search</td></tr>
+<tr>
+<td>Venue Search</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {apiGetMethod=Event Search}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Event Search</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the request list contains url</div>
+<div class="step successful">And the request list contains response block</div>
+
+<h3 class="example">Example: {apiGetMethod=Attraction Search}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Attraction Search</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the request list contains url</div>
+<div class="step successful">And the request list contains response block</div>
+
+<h3 class="example">Example: {apiGetMethod=Classification Search}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Classification Search</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the request list contains url</div>
+<div class="step successful">And the request list contains response block</div>
+
+<h3 class="example">Example: {apiGetMethod=Venue Search}</h3>
+<div class="step successful">Given open API Explorer V2 page</div>
+<div class="step successful">When I choose <span class="step parameter">Venue Search</span> to send request</div>
+<div class="step successful">And click GET button</div>
+<div class="step successful">Then the request list contains url</div>
+<div class="step successful">And the request list contains response block</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

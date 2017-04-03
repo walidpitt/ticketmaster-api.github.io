@@ -1,0 +1,38 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/pantheon/UserAccount.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test engineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test Pantheon User Account Page of Ticket Master Developer's site</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (developer-acct.ticketmaster.com/user/1554/apps) Verification for general page's elements [2.2.3.4 Login - Password field - enter valid password]</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">When navigate to Pantheon User Account page from LogIn page</div>
+<div class="step failed">Then check general page elements for Pantheon User Account page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;T[here are no applications here.
+Create something]!&gt; but was:&lt;T[HESE ARE YOUR APPS!
+EXPLORE THEM]!&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;T[here are no applications here.
+Create something]!&gt; but was:&lt;T[HESE ARE YOUR APPS!
+EXPLORE THEM]!&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.pantheon.UserAccountSteps.checkIfTitleIsCorrect(UserAccountSteps.java:25)
+	at bla.tm.steps.pantheon.UserAccountSteps$$EnhancerByCGLIB$$4d58fb7e.CGLIB$checkIfTitleIsCorrect$1(&lt;generated&gt;)
+	at bla.tm.steps.pantheon.UserAccountSteps$$EnhancerByCGLIB$$4d58fb7e$$FastClassByCGLIB$$301e3b88.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.pantheon.UserAccountSteps$$EnhancerByCGLIB$$4d58fb7e.checkIfTitleIsCorrect(&lt;generated&gt;)
+	at bla.tm.definitions.site.pantheon.UserAccountDefinition.checkGeneralPageElements(UserAccountDefinition.java:27)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)
+...</pre>
+</div>
+</div>

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Countdown widget","(/products-and-docs/widgets/countdown/) Event message - Check event message for invalid Event ID","FAILURE","2017-04-03T18:08:05.168Z","0.0","4.93"
+"User apps","(Pantheon|Delete App) Delete App positive [2.1.9 Delete application]","FAILURE","2017-04-03T17:52:16.991Z","0.0","20.08"
+"User account","(developer-acct.ticketmaster.com/user/1554/apps) Verification for general page's elements [2.2.3.4 Login - Password field - enter valid password]","FAILURE","2017-04-03T17:49:21.435Z","0.0","9.74"
